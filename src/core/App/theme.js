@@ -12,6 +12,7 @@ const colors = {
   semiDark: "rgba(54, 54, 54, 0.72)",
   iron: "#d1d5da",
   semiGrey: "rgba(209, 213, 218, 0.1)",
+  cornflowerBlue: "rgba(209, 213, 218, 0.3)", //button border
 };
 
 export const theme = {
@@ -24,9 +25,19 @@ export const theme = {
 
   lightMode: {
     backgroundColor: colors.whiteLilac,
+    mainBlue: colors.scienceBlue,
+    text: colors.mineShaft,
+    textSecondary: colors.slateGray,
+    buttonText: colors.white,
+    buttonBorder: colors.cornflowerBlue,
   },
 
   darkMode: {
     backgroundColor: colors.mineShaft2,
+    mainBlue: colors.dodgerBlue,
+    text: colors.white,
+    textSecondary: colors.white,
+    buttonText: colors.white,
+    buttonBorder: colors.cornflowerBlue,
   },
 };
