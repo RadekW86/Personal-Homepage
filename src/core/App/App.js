@@ -3,7 +3,7 @@ import { theme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
 import { useSelector } from "react-redux";
 import { selectThemeMode } from "../homepageSlice";
-import { Container } from "../../common/Container/styled";
+import { Homepage } from "../../features/Homepage";
 
 export const App = () => {
   const mode = useSelector(selectThemeMode);
@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle mode={mode} />
-      <Container></Container>
+      <Homepage />
     </ThemeProvider>
   );
 };
