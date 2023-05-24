@@ -11,5 +11,6 @@ html {
   
 body {
     font-family: 'Inter', sans-serif;
+    background-color: ${({ theme, mode }) => theme[mode].backgroundColor};
 };
 `;

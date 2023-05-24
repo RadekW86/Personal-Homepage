@@ -8,16 +8,25 @@ const colors = {
   mercury: "#E5E5E5", //Light grey
   dodgerBlue: "#2188FF", //Main blue DM
   shipCove: "#6D93BE",
+  mineShaft2: "#363636", //BG dakrmode
   semiDark: "rgba(54, 54, 54, 0.72)",
+  iron: "#d1d5da",
   semiGrey: "rgba(209, 213, 218, 0.1)",
 };
 
 export const theme = {
   boxShadow:
     "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
+
   breakPoints: {
     phoneMax: "750px",
   },
-  lightMode: {},
-  darkMode: {},
+
+  lightMode: {
+    backgroundColor: colors.whiteLilac,
+  },
+
+  darkMode: {
+    backgroundColor: colors.mineShaft2,
+  },
 };
