@@ -30,6 +30,9 @@ export const theme = {
     textSecondary: colors.slateGray,
     buttonText: colors.white,
     buttonBorder: colors.cornflowerBlue,
+    buttonShadowFocus:
+      "2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF",
+    buttonShadowActive: "inset 0px 2px 0px rgba(20, 70, 32, 0.2)",
   },
 
   darkMode: {
@@ -39,5 +42,8 @@ export const theme = {
     textSecondary: colors.white,
     buttonText: colors.white,
     buttonBorder: colors.cornflowerBlue,
+    buttonShadowFocus:
+      "2px -2px 0px #6D93BE, -2px 2px 0px #6D93BE, 2px 2px 0px #6D93BE, -2px -2px 0px #6D93BE",
+    buttonShadowActive: "inset 0px 2px 0px rgba(20, 70, 32, 0.2)",
   },
 };

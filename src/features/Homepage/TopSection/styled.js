@@ -78,6 +78,18 @@ export const StyledHireButton = styled.button`
     height: 46px;
     width: 138px;
   }
+
+  &:hover {
+    box-shadow: ${({ theme, mode }) => theme[mode].buttonShadowFocus};
+  }
+
+  &:focus {
+    box-shadow: ${({ theme, mode }) => theme[mode].buttonShadowFocus};
+  }
+
+  &:active {
+    box-shadow: ${({ theme, mode }) => theme[mode].buttonShadowActive};
+  }
 `;
 
 export const StyledButtonContent = styled.div`
