@@ -8,8 +8,7 @@ const colors = {
   mercury: "#E5E5E5", //Light grey
   dodgerBlue: "#2188FF", //Main blue DM
   shipCove: "#6D93BE",
-  mineShaft2: "#363636", //BG dakrmode
-  semiDark: "rgba(54, 54, 54, 0.72)",
+  semiDark: "rgba(54, 54, 54, 0.72)", //BG dakrmode
   iron: "#d1d5da",
   semiGrey: "rgba(209, 213, 218, 0.1)",
   cornflowerBlue: "rgba(209, 213, 218, 0.3)", //button border
@@ -30,18 +29,24 @@ export const theme = {
     textSecondary: colors.slateGray,
     buttonText: colors.white,
     buttonBorder: colors.cornflowerBlue,
+    switch: colors.mercury,
+    sun: colors.white,
+    sunAllign: "flex-start",
     buttonShadowFocus:
       "2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF",
     buttonShadowActive: "inset 0px 2px 0px rgba(20, 70, 32, 0.2)",
   },
 
   darkMode: {
-    backgroundColor: colors.mineShaft2,
+    backgroundColor: colors.mineShaft,
     mainBlue: colors.dodgerBlue,
     text: colors.white,
     textSecondary: colors.white,
     buttonText: colors.white,
     buttonBorder: colors.cornflowerBlue,
+    switch: colors.semiDark,
+    sun: colors.mineShaft,
+    sunAllign: "flex-end",
     buttonShadowFocus:
       "2px -2px 0px #6D93BE, -2px 2px 0px #6D93BE, 2px 2px 0px #6D93BE, -2px -2px 0px #6D93BE",
     buttonShadowActive: "inset 0px 2px 0px rgba(20, 70, 32, 0.2)",

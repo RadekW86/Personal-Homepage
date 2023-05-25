@@ -73,6 +73,7 @@ export const StyledHireButton = styled.button`
   border: 1px solid ${({ theme, mode }) => theme[mode].buttonBorder};
   height: 49px;
   width: 154px;
+  cursor: pointer;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
     height: 46px;
