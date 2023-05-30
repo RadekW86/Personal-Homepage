@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { selectThemeMode, toggleMode } from "../../../core/homepageSlice";
+import { selectThemeMode, toggleMode } from "../homepageSlice";
 import {
   StyledThemeToggler,
   StyledTogglerTitle,

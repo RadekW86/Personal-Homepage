@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectThemeMode } from "../../../core/homepageSlice";
+import { selectThemeMode } from "../homepageSlice";
 import {
   StyledTopSection,
   StyledImage,
