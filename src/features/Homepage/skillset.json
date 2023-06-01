@@ -1,0 +1,30 @@
+{
+  "skillset": [
+    "Semantic HTML + accessibility",
+    "CSS BEM convention",
+    "CSS Flexbox",
+    "CSS Grid",
+    "Responsive Design",
+    "Media Queries",
+    "JavaScript ES6+",
+    "Immutability",
+    "Fetch, Axios API requests",
+    "Promises, Async/Await",
+    "Error handling",
+    "NPM",
+    "JSX",
+    "React",
+    "React Hooks",
+    "React Router",
+    "Styled Components",
+    "Coding based on Figma designs",
+    "Redux (Toolkit)",
+    "Redux-Saga",
+    "Git",
+    "Markdown",
+    "GitHub Pull Requests & Review",
+    "Teamwork",
+    "Scrum",
+    "Trello"
+  ]
+}
