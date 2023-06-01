@@ -31,6 +31,8 @@ export const theme = {
     buttonBorder: colors.cornflowerBlue,
     switch: colors.mercury,
     sun: colors.white,
+    sectionBackground: colors.white,
+    divider: colors.cornflowerBlue,
     sunAllign: "flex-start",
     buttonShadowFocus:
       "2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF",
@@ -46,6 +48,8 @@ export const theme = {
     buttonBorder: colors.cornflowerBlue,
     switch: colors.semiDark,
     sun: colors.mineShaft,
+    sectionBackground: colors.semiDark,
+    divider: colors.cornflowerBlue,
     sunAllign: "flex-end",
     buttonShadowFocus:
       "2px -2px 0px #6D93BE, -2px 2px 0px #6D93BE, 2px 2px 0px #6D93BE, -2px -2px 0px #6D93BE",
