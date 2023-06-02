@@ -7,6 +7,7 @@ import tools from "../../images/tools.svg";
 import skillset from "../Homepage/skillset.json";
 import rocket from "../../images/rocket.svg";
 import toLearn from "../Homepage/toLearn.json";
+import { BottomSection } from "./BottomSection";
 
 export const Homepage = () => {
   return (
@@ -24,6 +25,7 @@ export const Homepage = () => {
           emoji={rocket}
           content={toLearn.toLearn}
         />
+      <BottomSection />
       </Main>
     </Container>
   );

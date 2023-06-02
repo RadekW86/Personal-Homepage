@@ -1,0 +1,1 @@
+export const contact = "wlodarski.radek@gmail.com"
