@@ -11,6 +11,7 @@ import {
   StyledItemText,
 } from "./styled";
 import { selectThemeMode } from "../homepageSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
 export const Section = ({ title, emoji, content }) => {
   const mode = useSelector(selectThemeMode);
@@ -24,7 +25,7 @@ export const Section = ({ title, emoji, content }) => {
       <StyledContent>
         <StyledList>
           {content.map((item) => (
-            <StyledItem key={item.id}>
+            <StyledItem key={nanoid()}>
               <StyledDot mode={mode} />
               <StyledItemText mode={mode}>{item}</StyledItemText>
             </StyledItem>
