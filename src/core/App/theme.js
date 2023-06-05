@@ -12,6 +12,8 @@ const colors = {
   iron: "#d1d5da",
   semiGrey: "rgba(209, 213, 218, 0.1)",
   cornflowerBlue: "rgba(209, 213, 218, 0.3)", //button border
+  cornflowerBlue02: "rgba(3, 102, 214, 0.2)",
+  cornflowerBlue05: "rgba(3, 102, 214, 0.5)",
 };
 
 export const theme = {
@@ -33,6 +35,7 @@ export const theme = {
     sun: colors.white,
     sectionBackground: colors.white,
     divider: colors.cornflowerBlue,
+    tileBorderActive: colors.cornflowerBlue02,
     sunAllign: "flex-start",
     buttonShadowFocus:
       "2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF",
@@ -50,6 +53,7 @@ export const theme = {
     sun: colors.mineShaft,
     sectionBackground: colors.semiDark,
     divider: colors.cornflowerBlue,
+    tileBorderActive: colors.cornflowerBlue05,
     sunAllign: "flex-end",
     buttonShadowFocus:
       "2px -2px 0px #6D93BE, -2px 2px 0px #6D93BE, 2px 2px 0px #6D93BE, -2px -2px 0px #6D93BE",
