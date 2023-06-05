@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Fingers } from "../../../images/fingers.svg";
 
 export const StyledBottomSection = styled.section`
   display: flex;
@@ -50,6 +51,17 @@ export const StyledNote = styled.div`
     font-size: 14px;
     line-height: 17px;
     margin: 8px 0;
+  }
+`;
+
+export const StyledFingers = styled(Fingers)`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
+    width: 16px;
+    height: 16px;
   }
 `;
 
