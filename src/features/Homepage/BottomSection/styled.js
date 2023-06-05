@@ -24,13 +24,13 @@ export const StyledTextWrapper = styled.div`
 export const StyledPreContact = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   font-size: 12px;
 `;
 
 export const StyledContact = styled.div`
   color: ${({ theme, mode }) => theme[mode].text};
-  font-weight: 900;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   letter-spacing: 0.05em;
   font-size: 32px;
 
@@ -42,7 +42,7 @@ export const StyledContact = styled.div`
 export const StyledNote = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
   max-width: 670px;
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   letter-spacing: 0.05em;
   font-size: 18px;
   line-height: 25px;

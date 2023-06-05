@@ -30,7 +30,7 @@ export const StyledProjectTile = styled.div`
 
 export const StyledTitle = styled.div`
   color: ${({ theme, mode }) => theme[mode].mainBlue};
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   font-size: 24px;
   line-height: 29px;
 
@@ -42,7 +42,7 @@ export const StyledTitle = styled.div`
 
 export const StyledDescription = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   font-size: 18px;
   line-height: 25px;
 

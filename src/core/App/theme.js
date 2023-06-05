@@ -24,6 +24,13 @@ export const theme = {
     phoneMax: "750px",
   },
 
+  fontWeights: {
+    light: "400",
+    normal: "600",
+    semiBold: "700",
+    bold: "900",
+  },
+
   lightMode: {
     backgroundColor: colors.whiteLilac,
     mainBlue: colors.scienceBlue,

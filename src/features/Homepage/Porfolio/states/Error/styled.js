@@ -26,7 +26,7 @@ export const StyledInfo = styled.div`
 
 export const StyledErrorTitle = styled.div`
   letter-spacing: 0.05em;
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   font-size: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
@@ -38,7 +38,7 @@ export const StyledErrorSubTitle = styled.div`
   max-width: 420px;
   line-height: 28px;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   font-size: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
@@ -55,7 +55,7 @@ export const StyledReturnButton = styled.button`
   width: 168px;
   cursor: pointer;
   color: ${({ theme, mode }) => theme[mode].buttonText};
-  font-weight: 600;
+  font-weight: ${({ theme }) => theme.fontWeights.normal};
   letter-spacing: 0.05em;
   font-size: 20px;
 

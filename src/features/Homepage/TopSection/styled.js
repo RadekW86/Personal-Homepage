@@ -36,13 +36,13 @@ export const StyledImage = styled.img`
 export const StyledPreTitle = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   font-size: 12px;
 `;
 
 export const StyledTitle = styled.div`
   color: ${({ theme, mode }) => theme[mode].text};
-  font-weight: 900;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   letter-spacing: 0.05em;
   font-size: 38px;
 
@@ -53,7 +53,7 @@ export const StyledTitle = styled.div`
 
 export const StyledDescription = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   letter-spacing: 0.05em;
   font-size: 20px;
   line-height: 28px;
@@ -116,7 +116,7 @@ export const StyledButtonPic = styled(envelope)`
 `;
 
 export const StyledButtonText = styled.div`
-  font-weight: 600;
+  font-weight: ${({ theme }) => theme.fontWeights.normal};
   font-size: 20px;
   letter-spacing: 0.05em;
   color: ${({ theme, mode }) => theme[mode].buttonText};

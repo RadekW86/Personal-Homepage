@@ -30,7 +30,7 @@ export const StyledTitleWrapper = styled.div`
 `;
 
 export const StyledTitle = styled.div`
-  font-weight: 900;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: 30px;
   letter-spacing: 0.05em;
   color: ${({ theme, mode }) => theme[mode].text};
@@ -99,7 +99,7 @@ export const StyledDot = styled(Dot)`
 
 export const StyledItemText = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   letter-spacing: 0.05em;
   font-size: 18px;
   word-wrap: break-word;

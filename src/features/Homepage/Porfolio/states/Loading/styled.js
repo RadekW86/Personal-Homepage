@@ -14,7 +14,7 @@ export const StyledInfo = styled.div`
   color: ${({ theme, mode }) => theme[mode].text};
   text-align: center;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   font-size: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {

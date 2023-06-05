@@ -19,7 +19,7 @@ export const StyledThemeToggler = styled.div`
 export const StyledTogglerTitle = styled.div`
   font-size: 12px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   text-transform: uppercase;
   color: ${({ theme, mode }) => theme[mode].textSecondary};
 
