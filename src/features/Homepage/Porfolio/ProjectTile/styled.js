@@ -49,6 +49,7 @@ export const StyledDescription = styled.div`
   ${({ link }) =>
     link &&
     css`
+      word-break: break-all;
       cursor: pointer;
       text-decoration: none;
       color: ${({ theme, mode }) => theme[mode].mainBlue};
