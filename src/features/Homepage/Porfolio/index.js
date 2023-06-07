@@ -36,15 +36,17 @@ export const Portfolio = () => {
       case "success":
         return (
           <>
-            {repos.map((repo) => (
-              <ProjectTile
-                key={repo.id}
-                title={repo.name}
-                description={repo.description}
-                demo={repo.homepage}
-                code={repo.html_url}
-              ></ProjectTile>
-            ))}
+            {repos
+              .filter((entry) => entry.name !== "Personal-Homepage")
+              .map((repo) => (
+                <ProjectTile
+                  key={repo.id}
+                  title={repo.name}
+                  description={repo.description}
+                  demo={repo.homepage}
+                  code={repo.html_url}
+                ></ProjectTile>
+              ))}
           </>
         );
     }
