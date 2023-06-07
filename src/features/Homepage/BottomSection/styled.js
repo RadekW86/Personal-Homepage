@@ -31,8 +31,23 @@ export const StyledPreContact = styled.div`
 export const StyledContact = styled.div`
   color: ${({ theme, mode }) => theme[mode].text};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
+  text-decoration: none;
   letter-spacing: 0.05em;
   font-size: 32px;
+
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    color: ${({ theme, mode }) => theme[mode].mainBlue};
+  }
+  &:focus {
+    color: ${({ theme, mode }) => theme[mode].mainBlue};
+  }
+  &:active {
+    color: ${({ theme, mode }) => theme[mode].mainBlue};
+    filter: brightness(120%);
+  }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
     font-size: 18px;

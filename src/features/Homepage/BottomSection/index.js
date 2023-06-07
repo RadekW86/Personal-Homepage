@@ -12,9 +12,13 @@ import {
 } from "./styled";
 import { contact } from "../routes";
 import { ReactComponent as Git } from "../../../images/git.svg";
-import { ReactComponent as Fb } from "../../../images/fb.svg";
+import { gitHub } from "../routes";
+// import { ReactComponent as Fb } from "../../../images/fb.svg";
+// import { facebook } from "../routes";
 import { ReactComponent as Li } from "../../../images/li.svg";
+import { linkedIn } from "../routes";
 import { ReactComponent as Ig } from "../../../images/ig.svg";
+import { instagram } from "../routes";
 
 export const BottomSection = () => {
   const mode = useSelector(selectThemeMode);
@@ -23,18 +27,34 @@ export const BottomSection = () => {
     <StyledBottomSection>
       <StyledTextWrapper>
         <StyledPreContact mode={mode}>let's talk!</StyledPreContact>
-        <StyledContact mode={mode}>{contact}</StyledContact>
+        <StyledContact
+          as="a"
+          href={`mailto:${contact}`}
+          target="_blank"
+          rel="noreferrer"
+          mode={mode}
+        >
+          {contact}
+        </StyledContact>
         <StyledNote mode={mode}>
           I'm always open to new projects whenever I have the time. If you have
           a website, dashboard or mobile app in mind and need some help to make
-          your ideas come to life, feel free to conatct me <StyledFingers/>
+          your ideas come to life, feel free to conatct me <StyledFingers />
         </StyledNote>
       </StyledTextWrapper>
       <StyledIconsContainer>
-        <StyledIcon as={Git} mode={mode} />
-        <StyledIcon as={Fb} mode={mode} />
-        <StyledIcon as={Li} mode={mode} />
-        <StyledIcon as={Ig} mode={mode} />
+        <a href={gitHub} target="_blank" rel="noreferrer">
+          <StyledIcon as={Git} mode={mode} />
+        </a>
+        {/* <a href={facebook} target="_blank" rel="noreferrer">
+          <StyledIcon as={Fb} mode={mode} />
+        </a> */}
+        <a href={linkedIn} target="_blank" rel="noreferrer">
+          <StyledIcon as={Li} mode={mode} />
+        </a>
+        <a href={instagram} target="_blank" rel="noreferrer">
+          <StyledIcon as={Ig} mode={mode} />
+        </a>
       </StyledIconsContainer>
     </StyledBottomSection>
   );

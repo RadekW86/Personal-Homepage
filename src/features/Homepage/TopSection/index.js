@@ -13,6 +13,7 @@ import {
   StyledButtonText,
 } from "./styled";
 import myPhoto from "../../../images/06.png";
+import { contact } from "../routes";
 
 export const TopSection = () => {
   const mode = useSelector(selectThemeMode);
@@ -32,12 +33,14 @@ export const TopSection = () => {
           seek new job opportunities to further enhance my skills and contribute
           to innovative projects.
         </StyledDescription>
-        <StyledHireButton mode={mode}>
-          <StyledButtonContent>
-            <StyledButtonPic />
-            <StyledButtonText mode={mode}>Hire Me</StyledButtonText>
-          </StyledButtonContent>
-        </StyledHireButton>
+        <a href={`mailto:${contact}`} target="_blank" rel="noreferrer">
+          <StyledHireButton mode={mode}>
+            <StyledButtonContent>
+              <StyledButtonPic />
+              <StyledButtonText mode={mode}>Hire Me</StyledButtonText>
+            </StyledButtonContent>
+          </StyledHireButton>
+        </a>
       </StyledInfoWrapper>
     </StyledTopSection>
   );
