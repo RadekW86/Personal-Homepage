@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as icon } from "../../../images/icon.svg";
 
 export const StyledThemeToggler = styled.div`
@@ -28,29 +28,63 @@ export const StyledTogglerTitle = styled.div`
   }
 `;
 
+const switchWidth = 47;
+const switchBorder = 1;
+
 export const StyledSwitch = styled.button`
   background-color: ${({ theme, mode }) => theme[mode].switch};
-  border: 1px solid ${({ theme, mode }) => theme[mode].textSecondary};
+  border: ${switchBorder}px solid
+    ${({ theme, mode }) => theme[mode].textSecondary};
   border-radius: 12.5px;
-  width: 47px;
+  width: ${switchWidth}px;
   height: 25px;
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: ${({ theme, mode }) => theme[mode].sunAllign};
+  justify-content: flex-start;
   cursor: pointer;
+  transition: 0.5s linear;
 `;
 
+const divMargin = 1.5;
+
 export const StyledIconDiv = styled.div`
-  margin: 2.5px;
+  margin: 2.5px ${divMargin}px;
+  transition: 0.3s linear;
   display: flex;
   align-items: center;
+
+  ${({ mode }) =>
+    mode === "darkMode" &&
+    css`
+ 
+      transform: translateX(
+        calc(
+          ${switchWidth}px - 2 * ${switchBorder}px - 2 * ${divMargin}px -
+            ${sunWidth}px
+        )
+      );
+    `}
+
+    ${({ mode }) =>
+    mode === "lightMode" &&
+    css`
+    
+      transform: translateX(
+        - calc(
+          ${switchWidth}px - 2 * ${switchBorder}px - 2 * ${divMargin}px -
+            ${sunWidth}px
+        )
+      );
+    `}
 `;
+
+const sunWidth = 20;
 
 export const StyledIcon = styled(icon)`
   fill: ${({ theme, mode }) => theme[mode].sun};
   color: ${({ theme, mode }) => theme[mode].textSecondary};
   height: 20px;
-  width: 20px;
+  width: ${sunWidth}px;
   transition: transform 0.3s ease;
 `;

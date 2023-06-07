@@ -23,7 +23,7 @@ export const Switch = () => {
           dispatch(toggleMode());
         }}
       >
-        <StyledIconDiv>
+        <StyledIconDiv mode={mode}>
           <StyledIcon mode={mode} />
         </StyledIconDiv>
       </StyledSwitch>
