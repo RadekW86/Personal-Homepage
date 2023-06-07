@@ -51,12 +51,13 @@ export const StyledReturnButton = styled.button`
   background-color: ${({ theme, mode }) => theme[mode].mainBlue};
   border-radius: 4px;
   border: 1px solid ${({ theme, mode }) => theme[mode].buttonBorder};
-  height: 49px;
-  width: 168px;
   cursor: pointer;
+  transition: 0.2s linear;
   color: ${({ theme, mode }) => theme[mode].buttonText};
   font-weight: ${({ theme }) => theme.fontWeights.normal};
   letter-spacing: 0.05em;
+  height: 49px;
+  width: 168px;
   font-size: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {

@@ -71,9 +71,10 @@ export const StyledHireButton = styled.button`
   background-color: ${({ theme, mode }) => theme[mode].mainBlue};
   border-radius: 4px;
   border: 1px solid ${({ theme, mode }) => theme[mode].buttonBorder};
+  cursor: pointer;
+  transition: 0.2s linear;
   height: 49px;
   width: 154px;
-  cursor: pointer;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
     height: 46px;

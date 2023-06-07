@@ -34,6 +34,7 @@ export const StyledContact = styled.div`
   text-decoration: none;
   letter-spacing: 0.05em;
   font-size: 32px;
+  transition: 0.2s ease-in;
 
   &:visited {
     text-decoration: none;
@@ -94,6 +95,7 @@ export const StyledIcon = styled(({ as: Component, ...props }) => (
 ))`
   width: 48px;
   height: 48px;
+  transition: 0.2s ease-in;
   fill: ${({ theme, mode }) => theme[mode].text};
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {

@@ -14,6 +14,7 @@ export const StyledProjectTile = styled.div`
   padding: 56px;
   gap: 24px;
   border: 6px solid ${({ theme, mode }) => theme[mode].buttonBorder};
+  transition: 0.5s ease-in-out;
 
   &:hover {
     border-color: ${({ theme, mode }) => theme[mode].tileBorderActive};
@@ -43,6 +44,7 @@ export const StyledTitle = styled.div`
 export const StyledDescription = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
   font-weight: ${({ theme }) => theme.fontWeights.light};
+  transition: 0.7s linear;
   font-size: 18px;
   line-height: 25px;
 
