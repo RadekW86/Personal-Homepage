@@ -1,22 +1,24 @@
 # Title
+Radek Włodarski - Front-End Developer
 
 ## DEMO:
-[click to visit]()
+[click to visit](https://radekw86.github.io/Personal-Homepage)
 
 ## General info:
-The functionality involves:
-<ul>
-<li>ABC</li>
-<li>DEF</li>
-<li>GHI</li>
-</ul>
+This is my personal homepage for skills showcase and Portfolio presentation.
 
-## Technologies:
+## Technologies used:
 <ul>
 <li>JSX</li>
 <li>JS ES6+</li>
 <li>React.js</li>
 <li>Styled Components</li>
+<li>Figma based design</li>
+<li>React Redux</li>
+<li>Redux-Saga</li>
+<li>Reduxjs/toolkit</li>
+<li>Error Handling</li>
+<li>Working with API</li>
 </ul>
 
 ## Preview:
