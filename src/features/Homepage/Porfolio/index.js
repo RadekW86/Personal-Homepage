@@ -14,6 +14,7 @@ import { selectThemeMode } from "../homepageSlice";
 import { ProjectTile } from "./ProjectTile";
 import { useEffect } from "react";
 import { fetchRepos, selectReposState, selectRepos } from "../reposSlice";
+import { repoIgnore } from "../routes";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
@@ -37,7 +38,7 @@ export const Portfolio = () => {
         return (
           <>
             {repos
-              .filter((entry) => entry.name !== "Personal-Homepage")
+              .filter((entry) => !repoIgnore.includes(entry.name))
               .map((repo) => (
                 <ProjectTile
                   key={repo.id}

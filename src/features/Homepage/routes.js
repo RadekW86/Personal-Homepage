@@ -4,3 +4,5 @@ export const gitHub = "https://github.com/RadekW86";
 export const facebook = "";
 export const linkedIn = "https://www.linkedin.com/in/radoslaw-wlodarski/";
 export const instagram = "https://www.instagram.com/radek_w86/";
+
+export const repoIgnore = ["Personal-Homepage", "RadekW86"];
