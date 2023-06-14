@@ -3,17 +3,20 @@ import { createSlice } from "@reduxjs/toolkit";
 const reposSlice = createSlice({
   name: "repos",
 
-  initialState: {},
+  initialState: {
+    reposStatus: "initial",
+    repos: [],
+  },
 
   reducers: {
     fetchRepos: () => ({
-      reposState: "loading",
+      reposStatus: "loading",
     }),
     fetchReposError: () => ({
-      reposState: "error",
+      reposStatus: "error",
     }),
     fetchReposSuccess: (_, { payload: repos }) => ({
-      reposState: "success",
+      reposStatus: "success",
       repos,
     }),
   },
@@ -23,7 +26,7 @@ export const { fetchRepos, fetchReposError, fetchReposSuccess } =
   reposSlice.actions;
 
 export const selectReposSlice = (state) => state.portfolio;
-export const selectReposState = (state) => selectReposSlice(state).reposState;
+export const selectreposStatus = (state) => selectReposSlice(state).reposStatus;
 export const selectRepos = (state) => selectReposSlice(state).repos;
 
 export default reposSlice.reducer;

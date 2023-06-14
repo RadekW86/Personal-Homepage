@@ -13,12 +13,12 @@ import {
 import { selectThemeMode } from "../homepageSlice";
 import { ProjectTile } from "./ProjectTile";
 import { useEffect } from "react";
-import { fetchRepos, selectReposState, selectRepos } from "../reposSlice";
+import { fetchRepos, selectreposStatus, selectRepos } from "../reposSlice";
 import { repoIgnore } from "../routes";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const portfolioState = useSelector(selectReposState);
+  const portfolioState = useSelector(selectreposStatus);
   const repos = useSelector(selectRepos);
   const mode = useSelector(selectThemeMode);
 
