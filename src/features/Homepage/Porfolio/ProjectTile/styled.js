@@ -44,6 +44,7 @@ export const StyledTitle = styled.div`
 export const StyledDescription = styled.div`
   color: ${({ theme, mode }) => theme[mode].textSecondary};
   font-weight: ${({ theme }) => theme.fontWeights.light};
+  word-break: break-word;
   transition: 0.7s linear;
   font-size: 18px;
   line-height: 25px;
@@ -51,7 +52,6 @@ export const StyledDescription = styled.div`
   ${({ link }) =>
     link &&
     css`
-      word-break: break-all;
       cursor: pointer;
       text-decoration: none;
       color: ${({ theme, mode }) => theme[mode].mainBlue};
@@ -79,6 +79,6 @@ export const StyledLinks = styled.div`
   grid-template-columns: 60px 1fr;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 1fr;
   }
 `;

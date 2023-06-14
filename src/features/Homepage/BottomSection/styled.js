@@ -51,7 +51,7 @@ export const StyledContact = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
