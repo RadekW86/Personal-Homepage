@@ -1,9 +1,9 @@
 {
   "toLearn": [
-    "TypeScript",
-    "ReactNative",
-    "Node.js",
     "Next.js",
+    "ReactNative",
+    "Tailwind CSS",
+    "Node.js",
     "Unit testing",
     "Cypress",
     "JS classes"
