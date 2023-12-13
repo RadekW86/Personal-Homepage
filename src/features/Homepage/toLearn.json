@@ -1,11 +1,10 @@
 {
   "toLearn": [
-    "Next.js",
     "ReactNative",
-    "Tailwind CSS",
+    "providers (ex. Google Cloud)",
+    "databases (ex. mongoDB)",
     "Node.js",
     "Unit testing",
-    "Cypress",
-    "JS classes"
+    "Cypress"
   ]
 }
