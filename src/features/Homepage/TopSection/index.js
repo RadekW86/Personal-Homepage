@@ -20,18 +20,23 @@ export const TopSection = () => {
 
   return (
     <StyledTopSection>
-      <StyledImage src={myPhoto} alt="myPhoto" />
+      <StyledImage src={myPhoto} alt="myPhoto" mode={mode} />
       <StyledInfoWrapper>
         <StyledPreTitle mode={mode}>this is</StyledPreTitle>
         <StyledTitle mode={mode}>Radosław Włodarski</StyledTitle>
         <StyledDescription mode={mode}>
-          I am a dedicated Frontend Developer working in React. I aim for
-          creating user-friendly interactive web applications. My commitment
-          lies in delivering high-quality code that adheres to best practices
-          while optimizing every detail. Whether working on solo projects or
-          collaborating within a team, I excel in both environments. I actively
-          seek new job opportunities to further enhance my skills and contribute
-          to innovative projects.
+          <StyledDescription mode={mode}>
+            A Frontend Developer fascinated with next.js !
+          </StyledDescription>
+          I aim for creating user-friendly interactive web applications. My
+          commitment lies in optimizing every detail and delivering a high-quality
+          code, that adheres to the best practices. <br />
+          Whether working on solo projects or collaborating within a team, I
+          excel in both environments.
+          <StyledDescription mode={mode}>
+            I actively seek new job opportunities to further enhance my skills
+            and contribute to innovative projects.
+          </StyledDescription>
         </StyledDescription>
         <a href={`mailto:${contact}`} target="_blank" rel="noreferrer">
           <StyledHireButton mode={mode}>

@@ -26,6 +26,8 @@ export const StyledImage = styled.img`
   height: 398px;
   width: 398px;
   border-radius: 50%;
+  border: 1px solid;
+  border-color: ${({ theme, mode }) => theme[mode].buttonText};
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
     height: 133px;
@@ -58,6 +60,7 @@ export const StyledDescription = styled.div`
   font-size: 20px;
   line-height: 28px;
   margin: 20px 0;
+  text-align: justify;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.phoneMax}) {
     font-size: 17px;
